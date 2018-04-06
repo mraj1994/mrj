@@ -16,7 +16,8 @@ class ColorConstants {
     class var KLineViewColor:UIColor {return UIColor(red: 220/255, green: 220/255, blue: 220/255, alpha: 1)}
     class var KChatBubbleBlueColor:UIColor {return UIColor(red: 0/255, green: 137/255, blue: 249/255, alpha: 1)}
     class var KChatBubbleGrayColor:UIColor {return UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)}
-    class var KWhiteSmokeColor:UIColor {return UIColor(red: 250/255, green: 250/255, blue: 250/255, alpha: 1)}
+    class var KWhiteSmokeColor:UIColor {return UIColor(red: 234/255, green: 237/255, blue: 237/255, alpha: 1)}
+    class var KAppColor:UIColor {return UIColor(red: 234/255, green: 237/255, blue: 237/255, alpha: 1)}
 }
 
 
