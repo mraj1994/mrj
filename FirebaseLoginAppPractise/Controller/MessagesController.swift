@@ -21,7 +21,10 @@ class MessagesController: UITableViewController {
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target:self, action: #selector(logout))
+        self.navigationController?.navigationBar.barTintColor = ColorConstants.KAppColor
+        self.navigationController?.navigationBar.isTranslucent = false
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .plain, target: self, action: #selector(newButtonTapped))
+        self.hidesBottomBarWhenPushed = true
         tableView.register(UserCell.self, forCellReuseIdentifier: cellId)
         checkIfuserIsLoggedIn()
 
@@ -29,7 +32,6 @@ class MessagesController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
